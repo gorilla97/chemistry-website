@@ -20,11 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <Navbar /> {/* Include the Navbar component */}
-        <div className="page-container"> {/* Apply consistent page container styling */}
-          {children}
-        </div>
+      <body>
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );

@@ -61,8 +61,8 @@ body {
   font-size: 18px;
   font-weight: bold;
   color: #F0F0F0;
-  white-space: nowrap;
-  line-height: 1.2;
+  white-space: nowrap; /* Ensure the word doesn’t wrap */
+  line-height: 1.2; /* Adjust for better centering */
 }
 
 .nav-circle:hover {
