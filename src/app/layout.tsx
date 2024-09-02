@@ -1,5 +1,6 @@
 import React from 'react';
 import './globals.css';
+import Navbar from '../components/navbar';  // Import the Navbar component
 import { Roboto } from 'next/font/google';
 
 const roboto = Roboto({
@@ -19,7 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Navbar /> {/* Include the Navbar component */}
+        <div className="page-container"> {/* Apply consistent page container styling */}
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
